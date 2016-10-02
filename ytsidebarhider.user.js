@@ -1,11 +1,14 @@
 // ==UserScript==
-// @name         Fix YT centering
-// @namespace    timothymh
-// @version      0.1
+// @name         YouTube Sidebar Hider
+// @namespace    agnesnutter
+// @version      1.0
 // @description  Hides the suggested videos sidebar and centers the content column.
 // @author       Timothy
 // @match        *://www.youtube.com/*
 // @grant        none
+// @homepage     https://agnesnutter.github.io/
+// @updateURL    https://agnesnutter.github.io/ytsidebarhider.user.js
+// @downloadURL  https://agnesnutter.github.io/ytsidebarhider.user.js
 // ==/UserScript==
 
 var css = document.createElement("style");
