@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Sidebar Hider
 // @namespace    agnesnutter
-// @version      1.0
+// @version      1.1
 // @description  Hides the suggested videos sidebar and centers the content column.
 // @author       Timothy
 // @match        *://www.youtube.com/*
@@ -13,15 +13,10 @@
 
 var css = document.createElement("style");
 css.type = "text/css";
-css.innerHTML = "#watch7-sidebar {display: none !important;}" +
-    "#watch7-content { margin: auto !important; float: none !important;}";
-
-var playcss = document.createElement("style");
-playcss.type = "text/css";
-playcss.innerHTML = "#watch7-sidebar-contents {display: none !important;}";
-
 if (window.location.href.indexOf("list") == -1) {
-    document.body.appendChild(css);
+    css.innerHTML = "#watch7-sidebar {display: none !important;}" +
+    "#watch7-content { margin: auto !important; float: none !important;}";
 } else {
-    document.body.appendChild(playcss);
+    css.innerHTML = "#watch7-sidebar-contents {display: none !important;}";
 }
+document.body.appendChild(css);
