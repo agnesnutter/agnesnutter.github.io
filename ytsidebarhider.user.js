@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         YouTube Sidebar Hider
-// @namespace    agnesnutter
+// @namespace    tues.dev
 // @version      1.1
-// @description  Hides the suggested videos sidebar and centers the content column.
-// @author       Timothy
+// @description  Hides the suggested videos sidebar and centers the content column. Has not been tested since 2016, so is almost certainly broken.
+// @author       agnesnutter
 // @match        *://www.youtube.com/*
 // @grant        none
 // @homepage     https://agnesnutter.github.io/
